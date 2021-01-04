@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escuela Leopoldo lugones</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <script src="https://kit.fontawesome.com/fcd512cdf9.js" crossorigin="anonymous"></script>
+    <!--<script src="/assets/js/jquery.js"></script>-->
+    <!--<script src="/assets/js/main.js"></script>-->
+  </head>
+  <body>
+    <header id="header">
+      <nav id="menu">
+        <ul class="menu">
+          <li id="logo"><img src="assets/img/logo.png" alt="Leopoldo Lugones logo"></li>
+          <li><a href="index.html"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+          <li>
+            <a href="index.html#mision"><span class="segundo"><i class="icon icon-graduation-cap"></i></span>Inistitucional</a>
+            <ul class="submenu">
+              <li><a href="index.html#acuerdo">Acuerdo de convivencia</a></li>
+              <li><a href="historia.html">Historia</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </li>
+          <li><a href="inscripcion.html"><span class="tercero"><i class="icon icon-mail"></i></span>Contacto</a></li>
+          <li><a href="http://ipem158lugones.com.ar/plataforma/"><span class="cuarto"><i class="icon icon-laptop"></i></span>Plataforma virtual</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" id="brand" href="index.html">Escuela Lugones</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon custom-toggler" id="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" id="link2">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" id="link1" href="inscripcion.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" id="link1" href="index.html#institucional" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Institucional
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="submenu1">
+                <a class="dropdown-item" href="index.html#acuerdo">Acuerdo de convivencia</a>
+                <a class="dropdown-item" href="historia.html">Historia</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="galeria.html">Galería</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link disabled" href="http://ipem158lugones.com.ar/plataforma" id="link3">Plataforma Virtual</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Slider-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active item-1" style="background-image: url('assets/img/slider/education.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+          <h3>Clases online</h3>
+          <p>Debido a la pandemia del Coronavirus SARS-2 estamos dictando clases online. Ingrese a nuestra plataforma virtual</p>
+          <a href="http://ipem158lugones.com.ar/plataforma/"><button id="carousel-platform">Ir a la plataforma virtual</button></a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img/slider/sala.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Sala de informática reacondicionada</h3>
+            <p>Estuvimos trabajando para reacondicionar la sala de informática para que los estudiantes puedan usar nuevos recursos</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('assets/img/slider/viajes.jpg');">
+          <div class="carousel-caption d-none d-md-block">
+          <h3>Futuros Viajes</h3>
+          <p>Los viajes estudiantiles son una manera muy didáctica de aprender. Por eso organizaremos nuevos viajes cuando estemos habilitados</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="main-container">
+      <main id="main">
+        <div class="content">
+          <div id="mision">
+            <h2>Misión institucional</h2>
+            <p>Somos una escuela inclusiva, que procura formar personas integrales, ciudadanos conscientes de sus derechos y responsabilidades, desarrollando un pensamiento crítico y reflexivo, respetando y valorando la diversidad.</p>
+            <p>Ofrecemos un modelo pedagógico basado en los principios de respeto, compromiso, solidaridad, igualdad, confianza y convivencia armoniosa.</p>
+            <p>Propuesta permite que todos los actores mantengan un rol activo, comprometido y creativo para que los estudiantes vayan cimentando un proyecto de vida con expectativas de proseguir estudios superiores o insertarse en el mundo laboral</p>
+          </div>
+          <div id="logo60">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e0e0e" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,160C384,139,480,117,576,117.3C672,117,768,139,864,176C960,213,1056,267,1152,272C1248,277,1344,235,1392,213.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <div class="vacio"> 
+              <div class="contenedor">
+                <ul>
+                  <li>Inscripciones abiertas</li>
+                </ul>
+              </div>
+              <p>El conocimiento nos invade. Prepárate para el mañana. Los egresados de esta escuela estarán habilitados para trabajar o estudiar en organizaciones proveedoras de soluciones contables, y en cualquier organismo o empresa que necesite el conocimiento de un profesional contable.</p>
+              <a href="inscripcion.html"><button>Inscribite</button></a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="curved" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,128C672,139,768,117,864,101.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <div id="metas">
+              <h2>Metas prioritarias</h2>
+              <p>
+                Generar espacios que permitan el compromiso de los padres en el
+                proceso de enseñanza-aprendizaje de sus hijos; afianzar el vínculo
+                escuela-comunidad a través de actividades conjuntas, mejorar las
+                propuestas de aulas acordes a las demandas actuales y
+                diversificando estrategias.
+              </p>
+              <p>Básicamente podemos resumir las metas en tres pilares:</p>
+              <ul>
+                <li>
+                  Formar un ciudadano, responsable, honesto, respetuoso de la ley,
+                  participativo
+                </li>
+                <li>
+                  Brindar aprendizajes significativos, desarrollando competencias,
+                  habilidades y destrezas que le permitan formarse culturalmente,
+                  elevando la calidad educativa y haciendo más eficiente la
+                  gestión institucional
+                </li>
+                <li>
+                  Convivir en un buen clima escolar, marcado por el respeto hacia
+                  el otro, en todos los estamentos (Alumnos, Docentes, Directivos,
+                  Concejo)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="curved" viewBox="0 0 1440 320"><path fill="#0e0e0e" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,229.3C384,203,480,117,576,90.7C672,64,768,96,864,138.7C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+          <section id="acuerdo">
+            <h2>Acuerdo de convivencia</h2>
+            <p>Los valores nos permiten vivir en armonía. La convivencia pacífica solo puede desarrollarse siendo tolerantes con nuestros semejantes. La tolerancia, precisamente, tiene que ver con el respeto hacia las diferencias que existen entre los seres humanos. En tiempos de individualismo y de poca comunicación  es importante comprender el valor extraordinario del “nosotros”. Formar parte de un “nosotros” nos hace felices, nos enseña a ser solidarios, potencia lo mejor que tenemos.</p>
+            <p>La escuela es el lugar para aprender y enseñar, para crear, para imaginar, para compartir.  La participación es un espacio que se construye a partir del espíritu de colaboración y el respeto hacia nosotros mismos y los demás.</p>
+            <p>Con la elaboración de este Acuerdo Escolar de Convivencia, según la Resolución N° 149/10 del Ministerio de Educación de la Provincia de Córdoba, se formularon normas  de parte de todos los miembros de la Comunidad Educativa, consensuados y aceptados por todos, fundados en los valores que la institución propone.</p>
+            <p>La propuesta es ir construyendo día a día la convivencia. El desafío es poder descubrirnos entre las demás personas, crearnos un espacio y un tiempo para reconocer nuestros modos particulares de relacionarnos y comunicarnos, de observar y observarnos, de emitir juicios sin prejuicios, de escuchar, de dialogar y de animarnos a transformar nuestro entorno.</p>
+            <h2><a href="assets/docs/convivencia.docx">Descargar el archivo</a></h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="curved" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,128C672,139,768,117,864,101.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </section>
+          <div id="summary">
+            <div class="text-widget">
+              <div class="img">
+                <img
+                  src="assets/img/graduados.png"
+                  alt="programas academicos"
+                />
+              </div>
+              <div class="content">
+                <h3>Nuestros Graduados</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium iure sunt culpa, accusamus expedita voluptates facere temporibus, sequi quae cumque odit quisquam architecto pariatur.
+                </p>
+                <button data-toggle="modal" data-target="#ventanaModal">Perfil del graduado</button>
+              </div>
+            </div>
+            <div class="text-widget">
+              <div class="img">
+                <img
+                  src="assets/img/book.png"
+                  alt="programas academicos"
+                />
+              </div>
+              <div class="content">
+                <h3>Programas academicos</h3>
+                <p>
+                  Se encuentra disponibles los programas de cada asignatura
+                  donde los alumnos y profesores tendrán acceso a ellos. Esto
+                  permite agilizar la obtención de los mismos descargándolos
+                  cómo archivos
+                </p>
+                <a href="inscripcion.html"><button>Programas academicos</button></a>
+              </div>
+            </div>
+            <div class="text-widget">
+              <div class="img">
+                <img src="assets/img/computer.png" alt="Plataforma virtual" />
+              </div>
+              <div class="content">
+                <h3>Plataforma Virtual (Campus)</h3>
+                <p>
+                  La plataforma Virtual, es un medio de interacción entre alumno
+                  y profesor con un montón de recursos didácticos y académicos
+                  que se pueden utilizar como herramienta de trabajo
+                </p>
+                <a href="http://ipem158lugones.com.ar/plataforma/"><button>Acceso al campus virtual</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="modal fade" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h4 id="tituloVentana" class="text-primary">Perfil de nuestros graduados</h4>
+      <button class="close" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-body text-justify">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolore. Commodi illo veritatis aut aperiam numquam. Odit inventore iste itaque tempora doloremque ipsam, voluptatum nisi pariatur mollitia quia voluptates maxime ipsum enim totam facilis. Illum odio, reprehenderit consectetur quibusdam eligendi quod error debitis earum exercitationem dolorem soluta consequatur deleniti asperiores.
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" type="button" data-dismiss="modal">Cerrar</button>
+    </div>
+  </div>
+</div>
+</div>
+    <footer> &copy2020 - Desarrollado por Gtech-Solutions 
+      <a href="https://www.facebook.com/lionesolutions"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/giraudofernando/"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/fergiraudo91"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.youtube.com/channel/UC2c_7UYGVlccDWkguxZeIIQ?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

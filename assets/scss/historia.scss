@@ -1,0 +1,149 @@
+
+#historia{
+    p{
+        font-size: 1.2rem;
+    }
+    h1{
+        padding-top: 0;
+    }
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.columns{
+    display: flex;
+}
+@mixin column {
+    width: 45%;
+    margin: 5px 20px;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.col1{
+    @include column;
+}
+
+.col2{
+    @include column;
+}
+
+.contadores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 55px;
+    background: #F3F4F5;
+}
+
+.contador{
+    text-align: center;
+    margin: 2rem 0;
+    .contador-cantidad{
+        font-size: 30px;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .fa-user-graduate{
+        color: black;
+    }
+    .fa-clock{
+        color: #004fc5;
+    }
+    .fa-chalkboard-teacher{
+        color: #0e5061;
+    }
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.ocultar{
+    opacity: 0;
+}
+
+.animar{
+    animation: aparecer 1.3s;
+}
+
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+$bloque: block;
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { 
+        .columns{
+            display: $bloque;
+            width: 100%;
+        }
+        .col1, .col2{
+            display: $bloque;
+            width: 90%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .contadores{
+            display: none;
+        }
+        .curved{
+            display: none;
+        }
+        #historia{
+            margin-top: 70px;
+        }
+    }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { 
+        .columns{
+            display: $bloque;
+        }
+        .col1, .col2{
+            display: $bloque;
+            width: 80%;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 1rem;
+        }
+     }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { 
+        .columns{
+            display: flex;
+        }
+        .col1, .col2{
+            @include column;
+        }
+     }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+@include media(xs){
+    
+}
+
+@include media(sm){
+
+}
+
+@include media(md){
+
+}

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$color1: #0e5061;
+$color2: #5da5a2;
+$color3: #f25724;
+$color4: #37a4d9;
+$main-color: #0253af;
+$background-1: #0e0e0e;
+
+*{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #161616;
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+    img{
+        width: 100%;
+    }
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.menu{
+    list-style: none;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    li{
+        display: table-cell;
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            display: block;
+            padding: 20px;
+            line-height: 20px;
+            position: relative;
+            text-align: center;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            .primero{
+                background: $color1;
+            }
+            .segundo{
+                background: $color2;
+            }
+            .tercero{
+                background: $color3;
+            }
+            .cuarto{
+                background: $color4;
+            }
+            span{
+                background: #174459;
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: -55px;
+                i{
+                    color: white;
+                }
+                .icon{
+                    display: block;
+                    line-height: 60px;
+                }
+
+            }
+        }
+    }
+}
+
+nav > ul > li:hover ul{
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 23.5%;
+}
+nav > ul > li:hover ul li a:hover{
+    background: yellow;
+    color: black;
+}
+
+nav > ul > li > ul{
+    background: $main-color;
+    left: 0;
+}
+
+nav > ul > li > ul{
+    display: none;
+}
+
+.menu li a:hover span{
+    top: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav{
+    background: $main-color;
+}
+
+.navbar{
+    display: none;
+}
+
+ul{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    font-family: 'Roboto';
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: 'Castoro';
+}
+p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#metas ul li{
+    list-style-type: disc;
+}
+
+.img img{
+    width: 150px;
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+button{
+    padding: 5px;
+    background: $main-color;
+    border: 1px solid #222222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: rgb(255, 255, 28);
+    color: black;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+#coments{
+    margin-top: 1.5rem;
+}
+#coments h4{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label{
+    font-size: 1rem;
+    display: block;
+}
+
+input{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.contenedor{
+    margin-top: 2rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    ul{
+        list-style: none;
+        animation: cambiar 7s infinite;
+        li{
+            color: white;
+        }
+    }
+}
+
+footer{
+    background: $background-1;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#mision{
+    background-color: $background-1;
+    display: block;
+    padding: 20px 60px;
+    padding-top: 3rem;
+    h2{
+        font-size: 35px;
+        color: white;
+        text-align: center;
+    }
+    p{
+        color:white;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+
+#metas{
+    padding: 0 60px;
+    width: 100%;
+    padding-bottom: 3rem;
+    background-color: white;
+    h2{
+        font-size: 35px;
+        color: black;
+        text-align: center;
+    }
+    p{
+        color:black;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    ul{
+        padding-left: 40px;
+    }
+    li{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}  
+
+#summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    padding-bottom: 5rem;
+    font-size: 1.2rem;
+    .img{
+        justify-self: center;
+    }
+}
+
+.text-widget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#institucional{
+    padding: 10px 30px;
+    text-align: justify;
+}
+
+#galeria{
+    margin-top: 48px;
+}
+
+#acuerdo{
+    background: $background-1;
+    h2{
+        font-size: 35px;
+        font-family: 'Castoro', sans-serif;
+        text-align: center;
+        color: white;
+    } 
+    p{
+        padding: 10px 40px;
+        text-align: justify;
+        font-size: 1.2rem;
+    }   
+}
+
+#acuerdo p, #acuerdo a{
+    color: white;
+}
+#acuerdo a{
+    font-size: 1rem;
+}
+
+#acuerdo a:hover{
+    color: yellow;
+}
+
+.vacio{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    h2{
+        color: white;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 2px black;
+    }
+    p{
+        color: white;
+        font-size: 1.2rem;
+        text-shadow: 2px 2px 2px black;
+        padding: 0 3rem;
+        text-align: center;
+    }
+    button{
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+}
+
+#logo60{
+    background: url('../img/60lugones.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#inscripcion{
+    padding-top: 4rem;
+}
+
+#inscripcion-form{
+    width: 100%;
+    height: 100vh;
+}
+
+/*FOOTER*/
+footer i{
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: rgb(3, 136, 180);
+}
+
+.curved{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    p{
+        font-size: 1rem !important;
+    }
+    #summary{
+        display: block;
+    }
+    .navbar{
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    #brand{
+        font-weight: bold;
+        color: white;
+    }
+    #menu{
+        display: none;
+    }
+    #link1:hover, #link2:hover, #link3:hover, #link4:hover{
+        color: yellow;
+        font-weight: bold;
+    }
+    #submenu1 a:hover{
+        background: yellow;
+    }
+    .contenedor ul li{
+        font-size: 1.7rem;
+    }
+    .vacio p{
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-shadow: none;
+    }
+    .vacio button{
+        font-size: 1.2rem;
+    }
+    .navbar-toggler span:hover{
+        background-image: url('../img/hamburger-menu.png');
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:479px){
+    p{
+        font-size: 1rem !important;
+    }
+    .vacio p{
+        padding: 0;
+        margin-top: 3rem;
+    }
+    #mision{
+        padding: 20px;
+    }
+    #metas{
+        padding: 0 20px;
+        ul li{
+            font-size: 1rem;
+        }
+    }
+    #institucional, #acuerdo{
+        padding: 0 0;
+    }
+     .navbar-toggler:hover{
+        background: yellow;
+    }
+    
+}
+
+

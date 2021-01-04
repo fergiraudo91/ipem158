@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #161616;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+#logo img {
+  width: 100%;
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  list-style: none;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.menu li {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 20px;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menu li a .primero {
+  background: #0e5061;
+}
+.menu li a .segundo {
+  background: #5da5a2;
+}
+.menu li a .tercero {
+  background: #f25724;
+}
+.menu li a .cuarto {
+  background: #37a4d9;
+}
+.menu li a span {
+  background: #174459;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -55px;
+}
+.menu li a span i {
+  color: white;
+}
+.menu li a span .icon {
+  display: block;
+  line-height: 60px;
+}
+
+nav > ul > li:hover ul {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 23.5%;
+}
+
+nav > ul > li:hover ul li a:hover {
+  background: yellow;
+  color: black;
+}
+
+nav > ul > li > ul {
+  background: #0253af;
+  left: 0;
+}
+
+nav > ul > li > ul {
+  display: none;
+}
+
+.menu li a:hover span {
+  top: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav {
+  background: #0253af;
+}
+
+.navbar {
+  display: none;
+}
+
+ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  font-family: "Roboto";
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Castoro";
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#metas ul li {
+  list-style-type: disc;
+}
+
+.img img {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 10px;
+}
+
+button {
+  padding: 5px;
+  background: #0253af;
+  border: 1px solid #222222;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffff1c;
+  color: black;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#coments {
+  margin-top: 1.5rem;
+}
+
+#coments h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+}
+
+input {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+.contenedor {
+  margin-top: 2rem;
+  width: 100%;
+  height: 3rem;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+.contenedor ul {
+  list-style: none;
+  animation: cambiar 7s infinite;
+}
+.contenedor ul li {
+  color: white;
+}
+
+footer {
+  background: #0e0e0e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#mision {
+  background-color: #0e0e0e;
+  display: block;
+  padding: 20px 60px;
+  padding-top: 3rem;
+}
+#mision h2 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+#mision p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+#metas {
+  padding: 0 60px;
+  width: 100%;
+  padding-bottom: 3rem;
+  background-color: white;
+}
+#metas h2 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+#metas p {
+  color: black;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+#metas ul {
+  padding-left: 40px;
+}
+#metas li {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  padding-bottom: 5rem;
+  font-size: 1.2rem;
+}
+#summary .img {
+  justify-self: center;
+}
+
+.text-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#institucional {
+  padding: 10px 30px;
+  text-align: justify;
+}
+
+#galeria {
+  margin-top: 48px;
+}
+
+#acuerdo {
+  background: #0e0e0e;
+}
+#acuerdo h2 {
+  font-size: 35px;
+  font-family: "Castoro", sans-serif;
+  text-align: center;
+  color: white;
+}
+#acuerdo p {
+  padding: 10px 40px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+#acuerdo p, #acuerdo a {
+  color: white;
+}
+
+#acuerdo a {
+  font-size: 1rem;
+}
+
+#acuerdo a:hover {
+  color: yellow;
+}
+
+.vacio {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.vacio h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px black;
+}
+.vacio p {
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+  padding: 0 3rem;
+  text-align: center;
+}
+.vacio button {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#logo60 {
+  background: url("../img/60lugones.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#inscripcion {
+  padding-top: 4rem;
+}
+
+#inscripcion-form {
+  width: 100%;
+  height: 100vh;
+}
+
+/*FOOTER*/
+footer i {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: #0388b4;
+}
+
+.curved {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1rem !important;
+  }
+
+  #summary {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  #brand {
+    font-weight: bold;
+    color: white;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #link1:hover, #link2:hover, #link3:hover, #link4:hover {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  #submenu1 a:hover {
+    background: yellow;
+  }
+
+  .contenedor ul li {
+    font-size: 1.7rem;
+  }
+
+  .vacio p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-shadow: none;
+  }
+
+  .vacio button {
+    font-size: 1.2rem;
+  }
+
+  .navbar-toggler span:hover {
+    background-image: url("../img/hamburger-menu.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  p {
+    font-size: 1rem !important;
+  }
+
+  .vacio p {
+    padding: 0;
+    margin-top: 3rem;
+  }
+
+  #mision {
+    padding: 20px;
+  }
+
+  #metas {
+    padding: 0 20px;
+  }
+  #metas ul li {
+    font-size: 1rem;
+  }
+
+  #institucional, #acuerdo {
+    padding: 0 0;
+  }
+
+  .navbar-toggler:hover {
+    background: yellow;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
