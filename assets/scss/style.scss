@@ -6,6 +6,7 @@ $color4: #37a4d9;
 $main-color: #0253af;
 $background-1: #0e0e0e;
 
+
 *{
     font-family: 'Lato', Helvetica, sans-serif;
     color: #161616;
@@ -460,5 +461,16 @@ footer i:hover{
     }
     
 }
+
+@import "font-awesome";
+
+@import "slider";
+
+@import "fonts";
+
+@import "historia";
+
+@import "gallery";
+
 
 
