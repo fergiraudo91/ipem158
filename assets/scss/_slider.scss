@@ -6,6 +6,12 @@
     -o-background-size: cover;
     background-size: cover;
   }
+
+  .navbar-toggler{
+    position: absolute;
+    right: 30px;
+    top: 8px;
+  }
   
   @media (max-width: 600px) {
     .carousel-item {
@@ -27,4 +33,13 @@
 
   #carousel-platform{
       cursor: pointer;
+  }
+
+  @media (min-width: 1200px) AND (max-width: 3500px) {
+    .carousel {
+      height: 80vh;
+    }
+    .carousel-item {
+      height: 80vh;
+    }
   }

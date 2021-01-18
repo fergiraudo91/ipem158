@@ -433,6 +433,10 @@ footer i:hover{
         background-image: url('../img/hamburger-menu.png');
         background-size: cover;
     }
+    #metas, #acuerdo{
+        padding-top: 40px;
+    }
+    
 }
 
 
@@ -458,6 +462,13 @@ footer i:hover{
     }
      .navbar-toggler:hover{
         background: yellow;
+    }
+    #metas, #acuerdo{
+        padding: 30px 0;
+    }
+    #metas{
+        padding-right: 20px;
+        padding-left: 20px;
     }
     
 }

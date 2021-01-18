@@ -348,7 +348,9 @@ footer i:hover {
     font-size: 1.2rem; }
   .navbar-toggler span:hover {
     background-image: url("../img/hamburger-menu.png");
-    background-size: cover; } }
+    background-size: cover; }
+  #metas, #acuerdo {
+    padding-top: 40px; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   p {
@@ -365,7 +367,12 @@ footer i:hover {
   #institucional, #acuerdo {
     padding: 0 0; }
   .navbar-toggler:hover {
-    background: yellow; } }
+    background: yellow; }
+  #metas, #acuerdo {
+    padding: 30px 0; }
+  #metas {
+    padding-right: 20px;
+    padding-left: 20px; } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2708,6 +2715,11 @@ footer i:hover {
   -o-background-size: cover;
   background-size: cover; }
 
+.navbar-toggler {
+  position: absolute;
+  right: 30px;
+  top: 8px; }
+
 @media (max-width: 600px) {
   .carousel-item {
     height: 280px; } }
@@ -2724,6 +2736,12 @@ footer i:hover {
 
 #carousel-platform {
   cursor: pointer; }
+
+@media (min-width: 1200px) and (max-width: 3500px) {
+  .carousel {
+    height: 80vh; }
+  .carousel-item {
+    height: 80vh; } }
 
 @font-face {
   font-family: 'icomoon';
