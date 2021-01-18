@@ -1,12 +1,14 @@
 <?php
+echo "<h1>".$_POST['nombre']."</h1>";
     if(isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['email']) && isset($_POST['mensaje'])){
         if(!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['mensaje'])){
+            echo "Hola entre";
             $name = $_POST['nombre'];
             $apellido = $_POST['apellido'];
             $email = $_POST['email'];
             $mensaje = $_POST['mensaje'];
-            $header = "From: no-reply@ipem158lugones.com.ar" . "\r\n";
-            $header .= "Reply to: no-reply@ipem158lugones.com.ar" . "\r\n";
+            $header = "From:" . $mail . "\r\n";
+            $header .= "Reply to: ipem158leopoldolugones@hotmail.com.ar" . "\r\n";
             $header .= "X-Mailer: PHP/" . phpversion();
             $mail = mail($name . " " . $apellido, "Enviado desde sitio web", $mensaje, $header);
             if($mail){
