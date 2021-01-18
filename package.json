@@ -1,13 +1,13 @@
 {
-  "name": "sass-1",
-  "version": "1.0.0",
+  "name": "ipem158",
+  "version": "4.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Fernando Giraudo",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
@@ -21,5 +21,5 @@
     "url": "https://github.com/fergiraudo91/ipem158/issues"
   },
   "homepage": "https://github.com/fergiraudo91/ipem158#readme",
-  "description": ""
+  "description": "Sitio web de la escuela IPEM 158 Leopoldo Lugones"
 }
