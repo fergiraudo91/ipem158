@@ -8,9 +8,10 @@ echo "<h1>".$_POST['nombre']."</h1>";
             $email = $_POST['email'];
             $mensaje = $_POST['mensaje'];
             $header = "From:" . $mail . "\r\n";
-            $header .= "Reply to: ipem158leopoldolugones@hotmail.com.ar" . "\r\n";
             $header .= "X-Mailer: PHP/" . phpversion();
+            $header .= "Reply to: ipem158leopoldolugones@hotmail.com.ar" . "\r\n";
             $mail = mail($name . " " . $apellido, "Enviado desde sitio web", $mensaje, $header);
+            echo $mail;
             if($mail){
                 echo "<h4>Mail enviado exitosamente</h4>";
             }
